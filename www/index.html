@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+   <link rel="stylesheet" href="css/jquery.mobile-1.3.1.min.css" />
+    <link rel="stylesheet" href="css/jquery.mobile.theme-1.3.1.min.css" />
+    <link type="text/css" href="css/jquery.mobile.simpledialog.min.css" rel="stylesheet" /> 
+    <title>PhoneGap 3 Contacts API demo</title>
+</head>
+<body>
+  
+        
+        
+        <div data-role="page" id="page_menulist" data-theme="b"  data-tap-toggle="false">
+
+	<div data-role="header" data-position="fixed" data-fullscreen="false">
+		<h1 id='page-header'>Menu</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">	
+
+		<ul data-role="listview">
+			<li><a href="#page_inputform" data-transition="slide" id='menuBet'>Bet 投注</a></li>
+			<li><a href="#page_inputform" data-transition="slide" id='menuResult'>Result 成绩</a></li>
+			<li><a href="#page_inputform" data-transition="slide" id='menuHit'>Hit 中奖</a></li>
+			<li><a href="#page_inputform" data-transition="slide" id='menuBeprint'>Reprint 印单</a></li>
+			<li><a href="#page_inputform" data-transition="slide" id='menuBalance'>Balance 赢输</a></li>
+			<li><a href="#page_inputform" data-transition="slide" id='menuCancelled'>Cancelled 已取消单号</a></li>
+			<li><a href="#page_inputform" data-transition="slide" id='menuHelp'>Help 帮助</a></li>
+			<li><a href="#page_login" data-transition="slidedown" id='menuLogout'>Logout 登出</a></li>			
+		</ul>
+
+	</div><!-- /content -->
+	
+	<div data-role="footer" data-position="fixed" data-fullscreen="false"  data-tap-toggle="false">
+		<h4 id='page-footer'>Page Footer</h4>
+	</div><!-- /footer -->
+</div>
+        
+        
+        
+        
+      
+        
+        
+        
+        
+        
+        <div data-role="page" id="page_inputform" data-theme="b" >
+
+	<div data-role="header" data-position="fixed" data-fullscreen="false"  data-tap-toggle="false">
+		<a href="#page_menulist" data-icon="home" data-transition="fade" id='menuMenuList'>Menu</a>
+		<a href="#page_phonebook" data-icon="plus" data-transition="slideup">PhoneBook</a>
+		<h1 id='page-header'>InputForm</h1>
+	</div><!-- /header -->
+
+
+	<div data-role="content" data-theme="b">	
+	<div id='inputform_textbox_group'>
+	</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed" data-fullscreen="false"  data-tap-toggle="false">
+	<div data-role="navbar">
+		<ul>
+			<li><a href="#" id="inputform_btnsubmit" data-icon="check" data-iconpos="left">Submit 呈交</a></li>
+		</ul>
+	</div><!-- /navbar -->
+	</div><!-- /footer -->
+
+</div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <div data-role="page" id="page_phonebook" data-theme="b" >
+
+	<div data-role="header" data-position="fixed" data-fullscreen="false"  data-tap-toggle="false">
+		<a href="#page_menulist" data-icon="home" data-transition="fade" id='menuMenuList'>Menu</a>
+		<a href="#page_phonebook" data-icon="plus" data-transition="slideup">PhoneBook</a>
+		<h1 id='page-header'>InputForm</h1>
+	</div><!-- /header -->
+
+<div class="wrapper">
+        <h1>My Contacts</h1>
+        <ul id="contactsList" data-role="listview" data-filter="true" data-filter-placeholder="Search Contacts..." data-inset="true">
+            <li>
+                <h2>Loading Contacts..</h2>
+            </li>
+
+        </ul>
+    </div>
+	<!-- /content -->
+
+	<div data-role="footer" data-position="fixed" data-fullscreen="false"  data-tap-toggle="false">
+	<div data-role="navbar">
+		
+	</div><!-- /navbar -->
+	</div><!-- /footer -->
+
+</div>
+        
+        
+        
+        
+        
+        <div data-role="page" id="page_inputform" data-theme="b" >
+
+	<div data-role="header" data-position="fixed" data-fullscreen="false"  data-tap-toggle="false">
+		<a href="#page_menulist" data-icon="home" data-transition="fade" id='menuMenuList'>Menu</a>
+		<a href="#page_phonebook" data-icon="plus" data-transition="slideup">PhoneBook</a>
+		<h1 id='page-header'>InputForm</h1>
+	</div><!-- /header -->
+
+
+	<div data-role="content" data-theme="b">	
+	<div id='inputform_textbox_group'>
+	</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed" data-fullscreen="false"  data-tap-toggle="false">
+	<div data-role="navbar">
+		<ul>
+			<li><a href="#" id="inputform_btnsubmit" data-icon="check" data-iconpos="left">Submit 呈交</a></li>
+		</ul>
+	</div><!-- /navbar -->
+	</div><!-- /footer -->
+
+</div>
+        
+        
+        
+        
+    </div>
+    <script type="text/javascript" src="cordova.js"></script>
+   <!-- <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile-1.4.2.min.js"></script>-->
+    <script type="text/javascript" src="js/index.js"></script>
+     <script type="text/javascript" src="js/main.js"></script>
+     	<script type="text/javascript" src="js/jquery.mobile.simpledialog.min.js"></script>
+    
+    
+    <script src="jquery/jquery-1.8.3.min.js"></script>
+    <script src="jquery/jquery.mobile-1.3.1.min.js"></script>
+   
+    
+    <script src="js/jquery.md5.js"></script>
+		<script src="js/jquery.purl.js"></script>
+		<script src="js/jquery.storage.js"></script>
+</body>
+</html>
